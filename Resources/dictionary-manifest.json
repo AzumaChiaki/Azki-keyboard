@@ -1,0 +1,115 @@
+{
+  "format_version": 1,
+  "file": "lexicon.sqlite",
+  "sha256": "1daa9ad22c38aaef4d488d585f4f4970fb462218bfd4db99672e98c1faf04f4d",
+  "bytes": 39141376,
+  "total_entries": 371636,
+  "languages": {
+    "en": {
+      "source_records": 198422,
+      "selected_source_records": 198422,
+      "emitted_before_deduplication": 198422,
+      "skipped_syntax": 0,
+      "skipped_bounds_or_alphabet": 0,
+      "output_rows": 198422,
+      "distinct_codes": 198422
+    },
+    "ja": {
+      "source_records": 219012,
+      "selected_source_records": 22643,
+      "emitted_before_deduplication": 41270,
+      "skipped_syntax": 0,
+      "skipped_bounds_or_alphabet": 0,
+      "output_rows": 38667,
+      "distinct_codes": 20187
+    },
+    "zh": {
+      "source_records": 125360,
+      "selected_source_records": 124543,
+      "emitted_before_deduplication": 124543,
+      "skipped_syntax": 0,
+      "skipped_bounds_or_alphabet": 817,
+      "added_from_frequency_list": 12420,
+      "output_rows": 134547,
+      "distinct_codes": 94513
+    }
+  },
+  "source_snapshot_date_utc": "2026-11-03",
+  "sqlite_writer_version": "3.54.0",
+  "data_licenses": {
+    "en": "MIT (Wordnik)",
+    "ja": "CC-BY-SA-4.0 (JMdict / EDRDG)",
+    "zh": "CC-BY-SA-4.0 (CC-CEDICT, wordfreq); MIT (jieba); Unicode-3.0 (Unihan)"
+  },
+  "adapted_database_license": "CC-BY-SA-4.0; Wordnik MIT attribution remains applicable to English rows",
+  "ranking": "Chinese uses jieba and wordfreq frequencies; a character's customary reading comes from Unihan and other readings are capped by compound-word usage. Japanese and English keep editorial boosts, JMdict priority hints and deterministic fallbacks. No learned language model.",
+  "lookup_codes": {
+    "zh": "compact lowercase numeric-tone-free pinyin; ü/u: becomes v; simplified Han surfaces",
+    "ja": "hiragana lookup; permitted common kanji and kana surfaces",
+    "en": "lowercase ASCII word prefix"
+  },
+  "verified_examples": [
+    {
+      "language": "zh",
+      "code": "nihao",
+      "surface": "你好"
+    },
+    {
+      "language": "zh",
+      "code": "zhongguo",
+      "surface": "中国"
+    },
+    {
+      "language": "zh",
+      "code": "shijie",
+      "surface": "世界"
+    },
+    {
+      "language": "zh",
+      "code": "wo",
+      "surface": "我"
+    },
+    {
+      "language": "zh",
+      "code": "ai",
+      "surface": "爱"
+    },
+    {
+      "language": "zh",
+      "code": "zhege",
+      "surface": "这个"
+    },
+    {
+      "language": "ja",
+      "code": "みず",
+      "surface": "水"
+    },
+    {
+      "language": "ja",
+      "code": "ねこ",
+      "surface": "猫"
+    },
+    {
+      "language": "ja",
+      "code": "にほんご",
+      "surface": "日本語"
+    },
+    {
+      "language": "ja",
+      "code": "ありがとう",
+      "surface": "ありがとう"
+    },
+    {
+      "language": "ja",
+      "code": "こんにちは",
+      "surface": "こんにちは"
+    },
+    {
+      "language": "en",
+      "code": "hello",
+      "surface": "hello"
+    }
+  ],
+  "notices": "Licenses/ATTRIBUTION.txt",
+  "rebuild": "python3 scripts/build_dictionary.py"
+}

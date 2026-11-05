@@ -1,0 +1,117 @@
+Azki Native offline dictionaries — sources and licenses
+
+This package uses CC-CEDICT, the jieba dictionary, wordfreq, OPUS OpenSubtitles word-pair counts, Unihan, JMdict, and the Wordnik Wordlist. Their authors
+do not endorse this application. Program code and dictionary data have
+separate licenses. Do not describe all contents as MIT.
+
+CHINESE — CC-CEDICT
+Community maintained free Chinese-English dictionary, published by MDBG.
+Referenced work: CEDICT — Copyright (C) 1997, 1998 Paul Andrew Denisowski.
+Source: https://www.mdbg.net/chinese/dictionary?page=cc-cedict
+License: Creative Commons Attribution-ShareAlike 4.0 International.
+https://creativecommons.org/licenses/by-sa/4.0/
+Original source notices are preserved in CC-CEDICT-original-header.txt
+and in DataSources/cedict.txt.gz in the source distribution.
+Changes: select bounded simplified Han-character surfaces; omit glosses;
+remove pinyin tone numbers and separators; map ü/u: to v; deduplicate;
+add explicitly editorial ranking and convert to SQLite lookup records.
+
+CHINESE WORD FREQUENCY — jieba dictionary
+dict.txt from jieba 0.42.1, Copyright (c) 2013 Sun Junyi, MIT license.
+Source: https://github.com/fxsjy/jieba
+The license is included in jieba-MIT.txt.
+Changes: use word frequencies to rank CC-CEDICT entries; add frequent words
+missing from CC-CEDICT with pinyin composed from CC-CEDICT readings; omit
+part-of-speech tags; convert to SQLite lookup records.
+
+CHINESE WORD FREQUENCY — wordfreq
+wordfreq by Robyn Speer. Chinese frequency data, Creative Commons
+Attribution-ShareAlike 4.0 International. It includes SUBTLEX-CH data, created
+by Marc Brysbaert et al. and freely available at
+http://crr.ugent.be/programs-data/subtitle-frequencies
+Source: https://github.com/rspeer/wordfreq
+The full notice is included in wordfreq-NOTICE.txt.
+Changes: rescale frequencies and combine them with the jieba frequencies.
+
+CHINESE WORD PAIRS — OPUS OpenSubtitles
+Word-pair counts derived from OPUS OpenSubtitles v2018 (zh_cn). The text itself
+is not included. Data from http://www.opensubtitles.org/, distributed by OPUS:
+P. Lison and J. Tiedemann, 2016, OpenSubtitles2016: Extracting Large Parallel
+Corpora from Movie and TV Subtitles. https://opus.nlpl.eu/OpenSubtitles/
+Changes: split lines into words; count adjacent words; keep the most frequent pairs.
+
+CHINESE CHARACTER READINGS — Unihan
+kMandarin field of the Unicode Han Database 16.0.0, Copyright Unicode, Inc.
+Source: https://www.unicode.org/Public/16.0.0/ucd/Unihan.zip
+The license is included in Unicode-License.txt.
+Changes: keep only kMandarin lines; use them to choose each character's
+customary reading; convert to SQLite lookup records.
+
+JAPANESE — JMdict (Japanese/English components)
+This package uses the JMdict dictionary file. Copyright is held by
+James William BREEN and The Electronic Dictionary Research and Development
+Group. It is used under Creative Commons Attribution-ShareAlike 4.0.
+Project: https://www.edrdg.org/wiki/JMdict-EDICT_Dictionary_Project.html
+License statement: https://www.edrdg.org/edrdg/licence.html
+Copies of the statement and documentation are included beside this notice.
+Changes: select common-priority reading/spelling pairs; obey re_restr and
+re_nokanji; retain valid multiple readings and kana surfaces; normalize
+lookup keys to hiragana; omit all glosses; deduplicate; add editorial and
+priority-based ranking; convert to SQLite. Only official JMdict_e source
+data was used; no multilingual gloss set, example-sentence corpus,
+SKK dictionary or upstream dictionary program is included.
+Regular updates: maintainers follow DataSources/README.md to refresh,
+review and repin the official data at least monthly and before releases.
+
+ENGLISH — Wordnik Wordlist
+Copyright (c) 2020 Wordnik. MIT License; full notice in Wordnik-MIT.txt.
+https://github.com/wordnik/wordlist
+Pinned commit: 46e6215d0f90356afe9c8ba4be347e7e98cb425c
+File: wordlist-20210729.txt. Changes: parse the quoted line format; select
+lowercase ASCII words of 1–32 letters; deduplicate; add original editorial
+ranking plus a length heuristic; convert to SQLite. The free word-game
+list has no frequency metadata. This package does not include Wordnik
+definitions, its separately licensed commercial dataset, or an English LM.
+
+TRADITIONAL CHINESE TABLE
+The traditional*.tsv files in Sources/Core/Resources are derived from the OpenCC 1.4.0
+dictionaries (ST, TW and HK tables), Copyright BYVoid and contributors, under the Apache License 2.0.
+See OpenCC-Apache-2.0.txt. Changes: only the first target is kept, and phrases that
+character-by-character conversion already gets right are removed.
+
+REGIONAL DIALECT CATALOGUE
+Sources/Core/Resources/dialects.json combines an editorial compilation of regional words
+with researched sentence endings and intensifiers. Researched rows carry forms, readings
+and an evidence tier only, with no quoted text; each row's source is in
+DataSources/dialect-sources.json. They come from Wiktionary (CC BY-SA 4.0), CC-Canto
+(CC BY-SA 3.0), Wikipedia (CC BY-SA 4.0) and published dialect studies, with tiers from
+rates measured in HKCanCor (CC BY 4.0), Tatoeba (CC BY 2.0 FR) and other public corpora,
+of which only derived rates are used. The file is offered under CC BY-SA 4.0, separately
+from the MIT code. It is used only when the user opts into dialect optimisation.
+
+SHARING THE CONVERTED DATA
+The adapted SQLite database and Chinese/Japanese extracts are provided
+under CC-BY-SA-4.0; retain these attributions, original copyright notices,
+license text and modification descriptions when redistributing adaptations.
+The English source and English rows also retain the Wordnik MIT notice.
+Azki contributors' original conversion/ranking additions to the database
+are offered under CC-BY-SA-4.0. Upstream material remains its authors'.
+No claim of exclusive copyright is made over upstream dictionary material.
+Source data, exact checksums, conversion code and a reproducible build
+procedure are provided in the source distribution. No DRM is applied.
+
+The application/converter's original code is MIT; this does not relicense
+the dictionaries. CC BY-SA share-alike applies to the adapted data. It is
+a separate license family from GPL/LGPL/AGPL.
+
+QUALITY AND WARRANTY
+Dictionary ranking uses source priority hints, word frequencies and
+transparent editorial preferences, not a bundled language model. The keyboard
+also has an optional, local-only per-user candidate memory that learns from the
+user's own adopted choices; it is not trained on document context and does not
+change this dictionary. Entries may contain outdated, offensive or specialist
+vocabulary. Data is provided without warranty; see the full licenses and EDRDG
+statement included in this directory.
+
+Emoji suggestions are derived from the Unicode CLDR 46.1.0 annotations (zh, en),
+Copyright Unicode, Inc., via cldr-json. The license is included in Unicode-License.txt.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-label="Azki输入法键盘标志">
+  <title>Azki输入法 · dark</title>
+  <rect width="1024" height="1024" fill="#282429"/>
+  <g fill="none" stroke="#342F35" stroke-width="8">
+    <path d="M-100 249 C230 115 646 176 1120 406"/>
+    <path d="M-100 814 C228 659 653 704 1120 935"/>
+  </g>
+  <path d="M338 312 C278 312 245 342 234 398 L207 617 C200 679 239 719 300 719 L724 719 C785 719 824 679 817 617 L790 398 C779 342 746 312 686 312 Z" fill="#D5A29C"/>
+  <g fill="#282429"><rect x="320" y="397" width="88" height="62" rx="18"/><rect x="468" y="397" width="88" height="62" rx="18"/><rect x="616" y="397" width="88" height="62" rx="18"/><rect x="320" y="493" width="88" height="62" rx="18"/><rect x="468" y="493" width="88" height="62" rx="18"/><rect x="616" y="493" width="88" height="62" rx="18"/><rect x="394" y="599" width="236" height="48" rx="24"/></g>
+</svg>

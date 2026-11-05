@@ -1,0 +1,22 @@
+{
+  "images": [
+    {
+      "filename": "AzkiInputMethod-light-1024.png",
+      "idiom": "universal"
+    },
+    {
+      "filename": "AzkiInputMethod-dark-1024.png",
+      "idiom": "universal",
+      "appearances": [
+        {
+          "appearance": "luminosity",
+          "value": "dark"
+        }
+      ]
+    }
+  ],
+  "info": {
+    "author": "Azki Native",
+    "version": 1
+  }
+}

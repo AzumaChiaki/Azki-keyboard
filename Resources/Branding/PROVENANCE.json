@@ -1,0 +1,47 @@
+{
+  "utc": "2026-11-03T17:19:42.778888+00:00",
+  "artworks": [
+    {
+      "file": "AzkiInputMethod-light.svg",
+      "sha256": "083c283af6fae6417d12d661586f61537b18c4604abb5123fee70873fc4b0694",
+      "origin": "Original Azki input-method artwork authored in this session; no upstream Fcitx graphic or code."
+    },
+    {
+      "file": "AzkiInputMethod-dark.svg",
+      "sha256": "20001b4adb000db6402165bad83a1a6998fdc4efbba1a26816ec306526017ee0",
+      "origin": "Original Azki input-method artwork authored in this session; no upstream Fcitx graphic or code."
+    },
+    {
+      "file": "AzkiInputMethod-tinted.svg",
+      "sha256": "26cacb122cab7bc36a45ee6461435eda90b2287435238ba30843f684d993ee0e",
+      "origin": "Original Azki input-method artwork authored in this session; no upstream Fcitx graphic or code."
+    },
+    {
+      "file": "AzkiInputMethod-mark.svg",
+      "sha256": "2b7135396cce2d3354017d1a453a0bf0a7d11d62e81e743a5a6ae4cda3e880d2",
+      "origin": "Original Azki input-method artwork authored in this session; no upstream Fcitx graphic or code."
+    },
+    {
+      "file": "AzkiInputMethod-light-1024.png",
+      "sha256": "da2d25f3e0e15eb5d590c72b60052e08aea7c5f7151c983cf55434596fdbff6b",
+      "origin": "Original Azki input-method artwork authored in this session; no upstream Fcitx graphic or code."
+    },
+    {
+      "file": "AzkiInputMethod-dark-1024.png",
+      "sha256": "4ab1437ecc330bf06abca2b79347682eb1f1bb6e7797431d6b882421c643262d",
+      "origin": "Original Azki input-method artwork authored in this session; no upstream Fcitx graphic or code."
+    },
+    {
+      "file": "AzkiInputMethod-tinted-1024.png",
+      "sha256": "cf94466e0ab5eab8e07dc925d646c8d2de6504b2e737356bb55eb2941fea8af6",
+      "origin": "Original Azki input-method artwork authored in this session; no upstream Fcitx graphic or code."
+    },
+    {
+      "file": "preview-sheet.png",
+      "sha256": "8b081f4c6a19e520e485945075a7484e17eaa48025ab93017026f87a9320820e",
+      "origin": "Original Azki input-method artwork authored in this session; no upstream Fcitx graphic or code."
+    }
+  ],
+  "reference": "User-requested style reference: AzkiDeck cream/dusty-rose palette; distinct keyboard shape, no source logo path copied.",
+  "license": "MIT; original artwork only, not a relicensing of any previous GPL implementation."
+}

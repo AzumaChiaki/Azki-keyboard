@@ -1,0 +1,9 @@
+Build/
+.build/
+.swiftpm/
+**/xcuserdata/
+.DS_Store
+__pycache__/
+AzkiInputMethod.xcodeproj/
+Configuration/*.plist
+Configuration/*.entitlements

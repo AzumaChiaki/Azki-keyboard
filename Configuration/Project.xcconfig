@@ -1,0 +1,4 @@
+// SPDX-License-Identifier: MIT
+AZKI_BUNDLE_IDENTIFIER = com.example.AzkiInputMethod
+AZKI_APP_GROUP = group.$(AZKI_BUNDLE_IDENTIFIER)
+#include? "../Build/Local.xcconfig"
