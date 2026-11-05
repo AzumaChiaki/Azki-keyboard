@@ -19,7 +19,7 @@ Azki输入法（以下简称“本应用”）包含一个 iOS / iPadOS 键盘�
 | 数据 | 用途 | 保留时间 |
 | --- | --- | --- |
 | 设置（语言、外观、方言地区等） | 保存你的偏好 | 直到你修改或卸载 App |
-| 自定义词库和快捷短语 | 提供你添加的内容 | 直到你删除或卸载 App |
+| 自定义词库和快捷短语 | 提供你添加的内容 | 短语直到你删除，词库直到你恢复旧版本或卸载 App |
 | 输入记忆（你选过的词、读音和选择次数） | 让常用词靠前，可以关闭 | 直到你清除或卸载 App |
 | 未提交的输入草稿 | 在键盘切换时恢复输入 | 只在内存中，最长 60 秒 |
 | 语音识别的文字 | 把文字从主 App 传回键盘 | 使用后删除，未使用时最长保留 60 秒 |
@@ -39,7 +39,8 @@ Azki输入法（以下简称“本应用”）包含一个 iOS / iPadOS 键盘�
 ### 删除你的数据
 
 - 输入记忆：在主 App「输入」页点“清除本机输入记忆”。
-- 词库和短语：在主 App 中删除。
+- 快捷短语：在主 App「短语」页删除。
+- 自定义词库：导入的内容可在「词库」页恢复到上一版本，全部删除需卸载 App。
 - 全部数据：卸载 App 后，本应用保存的数据都会被删除。
 
 ### 儿童隐私
@@ -70,7 +71,7 @@ The following stays on your device and is used only for the feature it belongs t
 | Data | Purpose | Kept for |
 | --- | --- | --- |
 | Settings (language, appearance, dialect region and so on) | Remembering your preferences | Until you change them or delete the app |
-| Custom dictionary and quick phrases | Offering what you added | Until you remove them or delete the app |
+| Custom dictionary and quick phrases | Offering what you added | Phrases until you remove them; the dictionary until you restore an earlier version or delete the app |
 | Input memory (words you chose, their readings and how often) | Ranking your frequent words higher; can be turned off | Until you clear it or delete the app |
 | Uncommitted draft | Restoring input when the keyboard changes | In memory only, up to 60 seconds |
 | Text from voice input | Passing text from the main app to the keyboard | Deleted after use, or within 60 seconds if unused |
@@ -90,7 +91,8 @@ The keyboard processes your keystrokes on your device to produce suggestions. Ke
 ### Deleting your data
 
 - Input memory: tap "清除本机输入记忆" (Clear input memory) on the Input page of the main app.
-- Dictionaries and phrases: remove them in the main app.
+- Quick phrases: remove them on the Phrases page of the main app.
+- Custom dictionary: restore the previous version on the Dictionary page. Removing it entirely requires deleting the app.
 - Everything: deleting the app removes all data it stored.
 
 ### Children's privacy
